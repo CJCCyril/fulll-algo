@@ -45,7 +45,7 @@ final class FormatterCollection implements IteratorAggregate
     }
 }
 
-function displaySequenceNumber(int $number): void
+function displayFormattedSequence(int $number): void
 {
     $formatters = new FormatterCollection(
         $number,
@@ -71,4 +71,4 @@ if (null === $number) {
     return;
 }
 
-displaySequenceNumber((int) $number);
+displayFormattedSequence((int) $number);
